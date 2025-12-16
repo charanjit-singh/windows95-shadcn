@@ -16,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {children}
+        <Suspense fallback={null}>
+          {children}
+        </Suspense>
         <Suspense fallback={null}>
           <ConditionalNavbar />
         </Suspense>
