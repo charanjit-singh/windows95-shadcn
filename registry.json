@@ -1,0 +1,353 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "windows95-cn",
+  "homepage": "https://github.com/your-username/windows95-cn",
+  "dependencies": [
+    "tailwind-merge",
+    "clsx",
+    "class-variance-authority"
+  ],
+  "items": [
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "windows95-theme",
+      "title": "windows95-theme",
+      "type": "registry:style",
+      "cssVars": {
+        "theme": {
+          "shadow-xs": "1px 1px 0 0 var(--border)",
+          "shadow-sm": "2px 2px 0 0 var(--border)",
+          "shadow": "3px 3px 0 0 var(--border)",
+          "shadow-md": "4px 4px 0 0 var(--border)",
+          "shadow-lg": "6px 6px 0 0 var(--border)",
+          "shadow-xl": "10px 10px 0 1px var(--border)",
+          "shadow-2xl": "16px 16px 0 1px var(--border)"
+        },
+        "light": {
+          "background": "0 0% 100%",
+          "foreground": "0 0% 0%",
+          "card": "192 15% 94%",
+          "card-foreground": "0 0% 0%",
+          "primary": "210 100% 50%",
+          "primary-foreground": "0 0% 100%",
+          "muted": "0 0% 85%",
+          "muted-foreground": "0 0% 35%",
+          "accent": "210 100% 60%",
+          "accent-foreground": "0 0% 0%",
+          "destructive": "0 100% 50%",
+          "destructive-foreground": "0 0% 100%",
+          "border": "0 0% 0%",
+          "ring": "210 100% 50%"
+        },
+        "dark": {
+          "background": "0 0% 0%",
+          "foreground": "0 0% 100%",
+          "card": "0 0% 10%",
+          "card-foreground": "0 0% 100%",
+          "primary": "210 100% 50%",
+          "primary-foreground": "0 0% 100%",
+          "muted": "0 0% 20%",
+          "muted-foreground": "0 0% 70%",
+          "accent": "210 100% 40%",
+          "accent-foreground": "0 0% 100%",
+          "destructive": "0 100% 50%",
+          "destructive-foreground": "0 0% 100%",
+          "border": "0 0% 50%",
+          "ring": "210 100% 50%"
+        }
+      }
+    },
+    {
+      "name": "utils",
+      "type": "registry:lib",
+      "title": "Utils",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "lib/utils.ts",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog",
+      "type": "registry:component",
+      "title": "Alert Dialog",
+      "description": "A modal dialog that interrupts the user with important content and expects a response.",
+      "dependencies": [
+        "@radix-ui/react-alert-dialog"
+      ],
+      "files": [
+        {
+          "path": "components/windows95-ui/alert-dialog.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "badge",
+      "type": "registry:component",
+      "title": "Badge",
+      "description": "Displays a badge or a component that looks like a badge.",
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "components/windows95-ui/badge.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "bar-chart",
+      "type": "registry:component",
+      "title": "Bar Chart",
+      "description": "A bar chart component styled with Windows 95 theme using Recharts.",
+      "dependencies": [
+        "recharts"
+      ],
+      "files": [
+        {
+          "path": "components/windows95-ui/bar-chart.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "button",
+      "type": "registry:component",
+      "title": "Button",
+      "description": "Displays a button or a component that looks like a button.",
+      "dependencies": [
+        "class-variance-authority",
+        "@radix-ui/react-slot"
+      ],
+      "files": [
+        {
+          "path": "components/windows95-ui/button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "card",
+      "type": "registry:component",
+      "title": "Card",
+      "description": "Displays a card with header, content, and footer.",
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "components/windows95-ui/card.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "combobox",
+      "type": "registry:component",
+      "title": "Combobox",
+      "description": "Autocomplete input and command palette with a list of suggestions.",
+      "dependencies": [
+        "@radix-ui/react-popover",
+        "@radix-ui/react-command"
+      ],
+      "files": [
+        {
+          "path": "components/windows95-ui/combobox.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:component",
+      "title": "Dropdown Menu",
+      "description": "Displays a menu to the user — such as a set of actions or functions — triggered by a button.",
+      "dependencies": [
+        "@radix-ui/react-dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "components/windows95-ui/dropdown-menu.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "field",
+      "type": "registry:component",
+      "title": "Field",
+      "description": "Form field components including checkbox and radio group.",
+      "dependencies": [
+        "@radix-ui/react-checkbox",
+        "@radix-ui/react-radio-group",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "components/windows95-ui/field.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "input",
+      "type": "registry:component",
+      "title": "Input",
+      "description": "Displays a form input field or a component that looks like an input field.",
+      "files": [
+        {
+          "path": "components/windows95-ui/input.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "input-group",
+      "type": "registry:component",
+      "title": "Input Group",
+      "description": "A group of inputs with addons and buttons.",
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "components/windows95-ui/input-group.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "label",
+      "type": "registry:component",
+      "title": "Label",
+      "description": "Renders an accessible label associated with controls.",
+      "dependencies": [
+        "@radix-ui/react-label"
+      ],
+      "files": [
+        {
+          "path": "components/windows95-ui/label.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "page-background",
+      "type": "registry:component",
+      "title": "Page Background",
+      "description": "A wrapper component that provides Windows 95 styled page background.",
+      "files": [
+        {
+          "path": "components/windows95-ui/page-background.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "page-header",
+      "type": "registry:component",
+      "title": "Page Header",
+      "description": "A page header component with title, description, and optional action button.",
+      "files": [
+        {
+          "path": "components/windows95-ui/page-header.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "type": "registry:component",
+      "title": "Select",
+      "description": "Displays a list of options for the user to pick from—triggered by a button.",
+      "dependencies": [
+        "@radix-ui/react-select"
+      ],
+      "files": [
+        {
+          "path": "components/windows95-ui/select.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "separator",
+      "type": "registry:component",
+      "title": "Separator",
+      "description": "Visually or semantically separates content.",
+      "dependencies": [
+        "@radix-ui/react-separator"
+      ],
+      "files": [
+        {
+          "path": "components/windows95-ui/separator.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "start-menu",
+      "type": "registry:component",
+      "title": "Start Menu",
+      "description": "A Windows 95 styled start menu navigation component.",
+      "dependencies": [
+        "@radix-ui/react-dropdown-menu"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "components/windows95-ui/start-menu.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "table",
+      "type": "registry:component",
+      "title": "Table",
+      "description": "A responsive table component.",
+      "files": [
+        {
+          "path": "components/windows95-ui/table.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tabs",
+      "type": "registry:component",
+      "title": "Tabs",
+      "description": "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+      "dependencies": [
+        "@radix-ui/react-tabs"
+      ],
+      "files": [
+        {
+          "path": "components/windows95-ui/tabs.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "textarea",
+      "type": "registry:component",
+      "title": "Textarea",
+      "description": "Displays a form textarea or a component that looks like a textarea.",
+      "files": [
+        {
+          "path": "components/windows95-ui/textarea.tsx",
+          "type": "registry:component"
+        }
+      ]
+    }
+  ]
+}
