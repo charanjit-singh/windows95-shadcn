@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "windows95-cn",
-  "homepage": "https://github.com/your-username/windows95-cn",
+  "homepage": "https://github.com/charanjit-singh/windows95-shadcn",
   "dependencies": [
     "tailwind-merge",
     "clsx",
