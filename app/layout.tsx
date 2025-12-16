@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ConditionalNavbar } from "@/components/conditional-navbar";
 import { Suspense } from "react";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "Windows 95 Shadcn UI",
@@ -23,6 +24,7 @@ export default function RootLayout({
           <ConditionalNavbar />
         </Suspense>
       </body>
+      <GoogleAnalytics gaId="G-S86Q3N50V0" />
     </html>
   );
 }
